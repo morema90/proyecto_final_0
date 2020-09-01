@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Ingresa</title>
+  </head>
+  <body>
+    <h1>Ingresa</h1><br>
+    <p>Por favor ingresa todos los datos del evento:</p>
+    <br>
+    <div class="contenedor">
+        <p>Nombre del evento: <input class="control" type="text" name="event_name" placeholder="event_name"></p><br>
+        <p>Categoría del Evento. Seleccione una categoría de la lista:
+            <select name="event_category">
+                <option value="CONFERENCE">Conferencia</option>
+                <option value="SEMINAR">Seminario</option>
+                <option value="CONGRESS">Congreso</option>
+                <option value="COURSE">Curso</option>
+            </select></p><br>
+        <p>Nombre del lugar donde se desarrolla el evento.: <input class="event_place" type="" name="event_place" placeholder="first_name"></p><br>
+        <p>Dirección del lugar donde se desarrolló del evento.: <input class="control" type="text" name="event_address" placeholder="event_address"></p><br>
+        <p>Fecha y hora de inicio del evento.: <input class="control" type="date" name="event_initial_date" placeholder="event_initial_date"></p><br>
+        <p>Fecha y hora de fin del evento.: <input class="control" type="date" name="event_final_date" placeholder="event_final_date"></p><br>
+        <p>Categoría del Evento. Seleccione una categoría de la lista:
+            <select name="event_type">
+                <option value="PRESENCIAL">Presencial</option>
+                <option value="VIRTUAL">Virtual</option>
+            </select></p><br>
+        <input class="control" type="submit" value="Crear Evento" id="boton"><br>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

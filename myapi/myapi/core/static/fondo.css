@@ -1,0 +1,60 @@
+body {
+    background-image: url(static/fondo1.png);
+    background-size: 200vw 400vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: arial;
+}
+
+.contenedor {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.formulario {
+    width: 50%;
+    color: #999;
+    margin: auto;
+    background: rgba(0,0,0,0.2);
+    padding: 10px 40px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 10;
+    font-size: 30px;
+    margin-bottom: 20px
+}
+
+input {
+    width: 60%;
+    margin-bottom: 30px;
+    padding: 7px;
+    box-size: 17px;
+}
+
+#boton {
+    background: #31384A;
+    color: #fff;
+    padding: 10px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}

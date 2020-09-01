@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Formulario de Registro</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="\core\static\fondo.css">
+  </head>
+  <body>
+    <form class="formulario" method="post">
+        <h2>Eliminar evento</h2>
+            <div class="contenedor">
+                <p>Ingrese su Token: <input class="control" type="text" name="event_name" placeholder="event_name"></p>
+                <p>Nombre del lugar donde se desarrolla el evento.: <input class="event_place" type="" name="event_place" placeholder="first_name"></p>
+                <p>Dirección del lugar donde se desarrolló del evento.: <input class="control" type="text" name="event_address" placeholder="event_address"></p>
+                <p>Fecha y hora de inicio del evento.: <input class="control" type="date" name="event_initial_date" placeholder="event_initial_date"></p>
+                <p>Fecha y hora de fin del evento.: <input class="control" type="date" name="event_final_date" placeholder="event_final_date"></p>
+                <p>Categoría del Evento. Seleccione una categoría de la lista:
+                    <select name="event_type">
+                        <option value="PRESENCIAL">Presencial</option>
+                        <option value="VIRTUAL">Virtual</option>
+                    </select></p>
+                <input class="control" type="submit" value="Actualizar Evento" id="boton">
+            </div>
+    </form>
+  </body>
+</html>

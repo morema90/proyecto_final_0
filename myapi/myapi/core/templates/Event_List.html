@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+        <title>Eventos</title>
+    </head>
+    <body>
+        {% if user.is_authenticated %}
+        <h1> ¡Hola! {{ user.first_name }} </h1>
+        <h2> Estos son tus eventos registrados: </h2>
+            <br>
+            {% for data in queryset %}
+            Nombre del Evento: {{data.event_name}}
+            <br>
+            Nombre del Usuario: {{data.event_user}}
+            <br>
+            Categoria del Evento: {{data.event_category}}
+            <br>
+            Id del evento: {{data.id}}
+            <br>
+            <a href="http://localhost:8000/api/events/delete/{{data.id}}">Eliminar</a>
+            <a href="http://localhost:8000/api/events/update/{{data.id}}">Modificar</a>
+            <br>
+            <br>
+            {% endfor %}
+
+            <form action="http://172.24.98.163:8080/api/events/create/">
+                <input type="submit" value="Registrar Nuevo Evento" />
+            </form>
+
+        {% else %}
+        <h1> No tienes eventos </h1>
+        {% endif %}
+    </body>
+</html>
+<hr />
+<a href="/api/events/create/">Crear evento</a>
+<hr />
+<a href="/logout">Cerrar sesión</a>

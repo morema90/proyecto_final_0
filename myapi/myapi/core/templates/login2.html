@@ -1,0 +1,9 @@
+{% block content %}
+<div class="login-panel">
+        <form method="post" role="form">{% csrf_token %}
+                {{ form.username }}
+                {{ form.password }}
+                <input type="submit" value="Login"/>
+        </form>
+</div>
+{% endblock %}
